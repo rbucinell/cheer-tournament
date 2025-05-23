@@ -1,5 +1,3 @@
-
-import { Fragment } from "react";
 import { ListItem, ListItemButton, ListItemText, ListItemAvatar } from "@mui/material";
 import { Avatar, Stack, Chip } from '@mui/material';
 import EventIcon from '@mui/icons-material/Event';
@@ -15,7 +13,6 @@ type TeamListItemProps = {
     state: string;
     slug: string;
   };
-
 
 export default function TeamListItem({ name, date, location, state, slug }: TeamListItemProps) {
 
@@ -35,24 +32,24 @@ export default function TeamListItem({ name, date, location, state, slug }: Team
             default: return <AccessTimeIcon />;
         }
     }
-
     return (
         <ListItem alignItems="flex-start">
-            <ListItemButton>
+            <ListItemButton href={`/event/${slug}`}>
                 <ListItemAvatar>
                     <Avatar alt={name} src={`/api/event/${slug}/images/avatar.jpg`} />
                 </ListItemAvatar>
                 <ListItemText
                     primary={name}
                     secondary={
-                            <Stack direction="row" spacing={1}>
-                                <Chip color="primary" icon={<EventIcon/>} label={date} size="small" />
-                                <Chip color="secondary" icon={<GiteIcon/>} label={location} size="small" />
-                                <Chip color={getColorByEventState(state)} icon={getIconByEventState(state)} label={state} size="small" />
-                            </Stack>
+                        <Stack direction="row" spacing={1}>
+                            <Chip color="primary" icon={<EventIcon/>} label={date} size="small" />
+                            <Chip color="secondary" icon={<GiteIcon/>} label={location} size="small" />
+                            <Chip color={getColorByEventState(state)} icon={getIconByEventState(state)} label={state} size="small" />
+                        </Stack>
                     }
                 />
             </ListItemButton>
         </ListItem>
     );
+   
 }

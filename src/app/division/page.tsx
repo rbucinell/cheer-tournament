@@ -1,12 +1,10 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
-import Image from "next/image";
 import TeamGrid from '../components/TeamGrid';
 import { ItemInterface } from 'react-sortablejs';
-import { Breadcrumbs, Container, IconButton, Link, Typography } from '@mui/material';
+import { Breadcrumbs, IconButton, Link } from '@mui/material';
 import { Home } from '@mui/icons-material';
 
-const DEFUALT_RUBRIC_CATEGORIES: ItemInterface[] = [
+const DEFAULT_RUBRIC_CATEGORIES: ItemInterface[] = [
   { id: 1, name: 'Motions' },
   { id: 2, name: 'Skill' },
   { id: 3, name: 'Execution' },
@@ -34,9 +32,9 @@ export default function Index() {
         Division
       </Link>
     </Breadcrumbs>
-    <TeamGrid categories={DEFUALT_RUBRIC_CATEGORIES} />
-    <TeamGrid categories={DEFUALT_RUBRIC_CATEGORIES} />
-    <TeamGrid categories={DEFUALT_RUBRIC_CATEGORIES} />
+    <TeamGrid categories={DEFAULT_RUBRIC_CATEGORIES} />
+    <TeamGrid categories={DEFAULT_RUBRIC_CATEGORIES} />
+    <TeamGrid categories={DEFAULT_RUBRIC_CATEGORIES} />
 
       {/*<Button variant="contained">Hello World</Button>*/}
     {/* <table className="mt-2 w-full table-auto border-collapse border border-gray-300">

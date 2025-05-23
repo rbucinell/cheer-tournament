@@ -1,8 +1,6 @@
 "use client";
 
 import { Component, ReactNode } from "react";
-import { Button, IconButton, Stack, Typography} from '@mui/material';
-import { SwapVert, Textsms, Delete } from "@mui/icons-material";
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
@@ -31,7 +29,7 @@ export default class TeamGrid extends Component<TeamGridProps, {}> {
         ];
     }
     createData(name:string, ...scores: Array<any>) {
-        let ret = { name };
+        const ret = { name };
         for ( let cat of this.props.categories) {
             ret[cat.name] = scores.shift();
         }

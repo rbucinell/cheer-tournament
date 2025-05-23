@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Container, TextField, Button, List, ListItem, ListItemText, IconButton, Typography, Stack } from '@mui/material';
+import { Container, Button, List, ListItem, ListItemText, IconButton, Typography, Stack } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import SaveIcon from '@mui/icons-material/Save';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -98,8 +98,6 @@ export default function CreateEvent() {
             <AddIcon  />
           </Button>
         </div>
-      
-      
       <List>
       <ReactSortable list={rubrics} setList={setRubrics} animation={150}>
         {rubrics.map((div, index) => (

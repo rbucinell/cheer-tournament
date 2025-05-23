@@ -1,0 +1,20 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280"
+     height="700" viewBox="30,147.5,1280,700">
+    <g id="document" fill="#ffffff" fill-rule="nonzero" stroke="#000000" stroke-width="0" stroke-linecap="butt"
+       stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+       font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+        <rect x="610" y="105.35714" transform="scale(1,1.4)" width="700" height="500" id="Shape 1 1"
+              vector-effect="non-scaling-stroke"/>
+    </g>
+    <g fill="none" fill-rule="nonzero" stroke="#000000" stroke-width="none" stroke-linecap="round"
+       stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+       font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+        <g id="stage">
+            <g id="layer1 1">
+                <path d="M30,177" id="Path 1" fill="none" stroke-width="1"/>
+                <path d="M710.75645,411.41703c-2.72229,-7.76357 1.16617,-25.40209 8.56045,-29.00882l365.79189,-167.30399c10.21115,-4.98073 26.88066,10.29298 30.88738,20.92413l37.32172,199.37054c6.76997,17.96299 -3.82251,32.84766 -22.75201,36.03755l-154.5632,-5.20507l-0.92191,27.72689c-0.033,0.99261 -0.95989,1.94856 -1.85376,1.91191l-94.01466,-3.85464l0.96461,-29.01118l-138.67811,-4.67012c-8.49896,1.4322 -19.87416,-8.46461 -22.72608,-16.59788zM962.00872,483.20033l0.87275,-19.35201l-69.87928,-3.15147l-0.87275,19.35201z"
+                      id="CompoundPath 1" fill="#f2f2f2" stroke-width="5"/>
+            </g>
+        </g>
+    </g>
+</svg>

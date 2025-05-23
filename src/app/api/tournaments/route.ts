@@ -2,6 +2,7 @@ import connectDB from '@/app/lib/mongodb';
 import Tournament from '@/app/models/tournament';
 
 export async function GET(request: Request) {
+    console.log( request );
     return new Response('Hello World', { status: 200 });
 }
 

@@ -1,25 +1,31 @@
-import { Fragment } from 'react';
 import TeamListItem from './components/home/TeamListItem';
-import { Stack, Typography, List, Divider } from '@mui/material';
+import { Divider } from '@mui/material';
+import {Button} from "@/components/ui/button";
+import {Plus} from "lucide-react";
 
 export default function Index() {
-  return (<Stack gap={2}>
-    <Fragment>
-    <Typography variant='h4'>Current Tournaments</Typography>
-    <List >
-      <TeamListItem name="Battle at the Birdhouse" location="Penfield HighSchool" date="12/11/2024" state="Active" slug="pittsford-race-to-the-top-2025-07-10" />
-    </List>
-    </Fragment>
-    <Typography variant='h4'>Recent Tournaments</Typography>
-    <List >
-
-      <TeamListItem name="Pittsford Race to the Top" location="Pittsford HighSchool" date="07/10/2025" state="Upcoming" slug="pittsford-race-to-the-top-2025-07-10" />
-      <Divider variant="inset" component="li" />
-      <TeamListItem name="Battle at the Birdhouse Jr." location="Penfield HighSchool" date="07/10/2025" state="Completed" slug="pittsford-race-to-the-top-2025-07-10" />
-      <Divider variant="inset" component="li" />
-      <TeamListItem name="This is Sparta" location="Sun Valley HighSchool" date="11/30/2024" state="Completed" slug="pittsford-race-to-the-top-2025-07-10" />
-      <Divider variant="inset" component="li" />
-
-    </List>
-  </Stack>);
+  
+  return <div className='flex flex-col gap-2'>
+    <Button>
+      <Plus className="text-lg" />
+      New Tournament
+    </Button>
+    <div>
+      <h4>Current Tournaments</h4>
+      <ul>
+        <TeamListItem name="Battle at the Birdhouse" location="Penfield HighSchool" date="12/11/2024" state="Active" slug="penfield-batb-2025-07-10" />
+      </ul>
+    </div>
+    <div>
+      <h4>Recent Tournaments</h4>
+      <ul>
+        <TeamListItem name="Pittsford Race to the Top" location="Pittsford HighSchool" date="07/10/2025" state="Upcoming" slug="pittsford-rttt-2025-07-10" />
+        <Divider variant="inset" component="li" />
+        <TeamListItem name="Battle at the Birdhouse Jr." location="Penfield HighSchool" date="07/10/2025" state="Completed" slug="penfield-batbjr-2025-07-10" />
+        <Divider variant="inset" component="li" />
+        <TeamListItem name="This is Sparta" location="Sun Valley HighSchool" date="11/30/2024" state="Completed" slug="sunvalley-sparta-2025-07-10" />
+        <Divider variant="inset" component="li" />
+      </ul>
+      </div>
+  </div>;
 }
